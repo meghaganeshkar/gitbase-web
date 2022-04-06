@@ -1,0 +1,49 @@
+Console
+Hibernate: 
+    select
+        employeeen0_.id as id1_0_,
+        employeeen0_.email as email2_0_,
+        employeeen0_.first_name as first_na3_0_,
+        employeeen0_.last_name as last_nam4_0_ 
+    from
+        tbl_employees employeeen0_
+API Response
+[
+    {
+        "id": 1,
+        "firstName": "Lokesh",
+        "lastName": "Gupta",
+        "email": "abc@gmail.com"
+    },
+    {
+        "id": 2,
+        "firstName": "Deja",
+        "lastName": "Vu",
+        "email": "xyz@email.com"
+    },
+    {
+        "id": 3,
+        "firstName": "Caption",
+        "lastName": "America",
+        "email": "cap@marvel.com"
+    }
+]
+HTTP GET http://localhost:8080/employees/2
+Console
+Hibernate: 
+    select
+        employeeen0_.id as id1_0_0_,
+        employeeen0_.email as email2_0_0_,
+        employeeen0_.first_name as first_na3_0_0_,
+        employeeen0_.last_name as last_nam4_0_0_ 
+    from
+        tbl_employees employeeen0_ 
+    where
+        employeeen0_.id=?
+API Response
+{
+    "id": 2,
+    "firstName": "Deja",
+    "lastName": "Vu",
+    "email": "xyz@email.com"
+}
