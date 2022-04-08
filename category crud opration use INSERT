@@ -1,0 +1,11 @@
+INSERT INTO table_name
+ VALUES (value1, value2, value3, ...);
+              INSERT INTO table_name (column1, column2, column3, ...)
+ VALUES (value1, value2, value3, ...);
+            INSERT INTO menu
+VALUES (1, 'croissant', 1, '2020-12-16');
+If we want to add multiple rows, we do that using:
+INSERT INTO menu
+VALUES 
+(2, 'bread', 3, '2020-12-16' ),
+(3, 'eclairs', 2, '2020-12-16' );
