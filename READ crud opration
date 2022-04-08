@@ -1,0 +1,16 @@
+SELECT * FROM menu;
+    IF OBJECT_ID('cusp_CustomerRead') IS NOT NULL
+BEGIN 
+    DROP PROC cusp_CustomerRead
+END 
+GO
+CREATE PROC cusp_CustomerRead
+    @CustomerID int
+AS 
+BEGIN 
+ 
+    SELECT CustomerID, FirstName, LastName, Email, PhoneNumber
+    FROM   Customer  
+    WHERE  (CustomerID = @CustomerID) 
+END
+GO
