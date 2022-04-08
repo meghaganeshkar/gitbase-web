@@ -1,0 +1,6 @@
+UPDATE table_name
+ SET column1 = value1, column2 = value2, ...
+ WHERE condition;
+                    UPDATE menu
+ SET item_name = 'chocolate croissant', price = 2.5
+ WHERE item_id = 1;
